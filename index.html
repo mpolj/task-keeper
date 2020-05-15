@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0"
+        name="viewport">
+  <title>Lists</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+
+    <br>
+
+    <div class="card">
+      <div class="card-header">
+        Daily Self Clearing Task Manager
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Enter Your ToDo's Below</h5>
+        <p class="card-text">They'll live live here for 24 hours. After that you'll never see them again.</p>
+      </div>
+    </div>
+
+    <br>
+
+    <form id="taskForm">
+      <input id="task" class="form-control form-control-lg" type="text" placeholder="Type Task">
+      <br>
+      <button onclick="addTaskFromInput()" type="button" class="btn btn-primary btn-lg btn-block" >Add task to List</button>
+    </form>
+
+    <br>
+
+    <button type="button" class="btn btn-warning">
+      Uncompleted Tasks in List <span id="taskCount" class="badge badge-light"></span>
+    </button>
+
+    <br>
+    <br>
+    <table id="taskTable" class="table">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+    </table>
+    
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
